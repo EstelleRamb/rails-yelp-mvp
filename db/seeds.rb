@@ -17,7 +17,7 @@ puts "Créons des restaurants.."
     address: Faker::Address.full_address,
     phone_number: Faker::PhoneNumber.phone_number,
     category: Restaurant::CATEGORY.sample,
-    # rating: rand(1..5)
+    rating: rand(1..5)
 
   )
   puts "Restaurant #{restaurant.id} a été créé"
